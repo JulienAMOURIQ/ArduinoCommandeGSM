@@ -175,7 +175,7 @@ public:
  * 
  * 
  ************************************************************************/
-#define CODEPINSMS "5134"
+#define CODEPINSMS "1527"
 
 
 C_Instruction uneInstruction;
@@ -205,6 +205,7 @@ void loop(){
   // si il y a des messages disponibles 
   if (vecteurcomm.bICSnouveau_message_disponible()){
     Serial.println("message dispo");
+    //test
     vecteurcomm.ICSrecevoirMessage();
      Serial.println("message recu");
     uneInstruction.setEmmetteur(vecteurcomm);
